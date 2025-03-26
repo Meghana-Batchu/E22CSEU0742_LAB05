@@ -2,17 +2,16 @@ pipeline {
     agent any
     
     stages {
-           stage('Build') {
+        stage('Build') {
             steps {
                 bat 'echo Building the project...'
             }
         }
-
         
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
         
