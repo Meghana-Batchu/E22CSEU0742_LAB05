@@ -3,12 +3,12 @@ pipeline {
     
     stages {
         stage('Build') {
+           stage('Build') {
             steps {
-                echo 'Building the project...'
-                // Use 'sh' for Linux/macOS, 'bat' for Windows
-                sh 'mvn clean compile'
+                bat 'echo Building the project...'
             }
         }
+
         
         stage('Test') {
             steps {
