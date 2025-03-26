@@ -2,7 +2,6 @@ pipeline {
     agent any
     
     stages {
-        stage('Build') {
            stage('Build') {
             steps {
                 bat 'echo Building the project...'
